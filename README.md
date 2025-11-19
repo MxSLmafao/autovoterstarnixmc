@@ -11,3 +11,4 @@
 ## I am not continuing this project 
 I have found a similar and better project made by [@Serega007RU](https://github.com/Serega007RU/), here is the link to [Auto Vote Rating](https://github.com/Serega007RU/Auto-Vote-Rating).
 >***If I got any other reason to continue, i will, so ping me if you find any***
+# autovoterstarnixmc
