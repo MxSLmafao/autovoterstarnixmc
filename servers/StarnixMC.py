@@ -171,8 +171,10 @@ class StarnixMC:
         text_box.send_keys(self.user)
         print("StarnixMC: topminecraftservers.org is protected by Cloudflare. Complete any verification challenges in the opened tab.")
         try:
-            submit = driver.find_element(By.CSS_SELECTOR, "form[action*='/vote/41289'] button[type='submit'],"
-                                                 "form[action*='/vote/41289'] input[type='submit']")
+            submit = driver.find_element(
+                By.CSS_SELECTOR,
+                "form[action*='/vote/41289'] button[type='submit'], form[action*='/vote/41289'] input[type='submit']",
+            )
             driver.execute_script("arguments[0].click();", submit)
         except Exception:
             pass

@@ -24,16 +24,18 @@ if __name__ == "__main__":
 
         raw_config_server_data = {}
         for i in global_variables.config_data['server']:
-            raw_config_server_data[i] = global_variables.config_data['server'][i].split(' ')
+            raw_value = global_variables.config_data['server'][i]
+            if isinstance(raw_value, list):
+                raw_config_server_data[i] = raw_value
+            else:
+                raw_config_server_data[i] = str(raw_value).split(' ')
 
     for i in raw_config_server_data:
         global_variables.config_server_data[i] = []
-        if global_variables.config_data['is_show_captcha'] is False:
-            for j in raw_config_server_data[i]:
-                if j[len(j)-2]+j[len(j)-1] != '.c':
-                    global_variables.config_server_data[i].append(j[1:])
-        else:
-            for j in raw_config_server_data[i]:
-                global_variables.config_server_data[i].append(j[1:])
+        for j in raw_config_server_data[i]:
+            server_key = j.lstrip('-')
+            if global_variables.config_data['is_show_captcha'] is False and server_key.endswith('.c'):
+                continue
+            global_variables.config_server_data[i].append(server_key)
 
     Main()
