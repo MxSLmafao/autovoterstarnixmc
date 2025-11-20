@@ -7,8 +7,7 @@ class OpLegends:
                  mmp_server="server/252752/vote/", bms_server="server-oplegends.4667/vote") -> None:
         self.user = global_variables.config_data["username"]
         self.option = option
-        self.driver = webdriver.Chrome(
-            service=Service(ChromeDriverManager().install()), options=self.option)
+        self.driver = uc.Chrome(options=self.option, use_subprocess=False)
         self.is_proxy_change = global_variables.config_data["is_proxy_change"]
 
         self.msl_server = msl_server

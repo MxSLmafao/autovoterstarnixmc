@@ -5,10 +5,9 @@ from servers.SSLproxies import NewProxy
 class ChangeProxy:
     @staticmethod
     def change_proxy(option):
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=option)
+        driver = uc.Chrome(options=option, use_subprocess=False)
         proxy = NewProxy.proxy(driver=driver)
         print(proxy)
         option.add_argument(f'--proxy-server={proxy}')
-        webdriver.DesiredCapabilities.CHROME['acceptSslCerts'] = True
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=option)
+        driver = uc.Chrome(options=option, use_subprocess=False)
         return driver
