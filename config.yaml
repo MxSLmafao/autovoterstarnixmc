@@ -1,5 +1,5 @@
 #change this with your username
-username: ".GoAmeer030"
+username: "RRF_GAMING"
 
 #change to "True" if you want to change proxies
 is_proxy_change: False
@@ -8,8 +8,12 @@ is_proxy_change: False
 is_show_captcha: True
 
 server:
-  OpLegends:
-    -minecraft_server_list_com
-    -minecraftservers_org.c
+  StarnixMC:
     -minecraft_mp_com.c
-    -best_minecraft_servers_co
+    -minecraft_server_net.c
+    -minecraftservers_org.c
+    -topg_org.c
+    -topminecraftservers_org.c
+    -mc_servers_com.c
+    -mclist_io
+    -mcservertime_com.c

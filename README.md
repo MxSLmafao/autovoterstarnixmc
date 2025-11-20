@@ -1,11 +1,15 @@
 # AutoMineVoter :robot:
 **An **BOT** or **SCRIPT** that is used to automatically vote for the **Minecraft Servers** instead of you.**
 ## Servers now in support:
-* [Oplegends](https://oplegends.com/)
-    - [Minecraft-server-list](https://minecraft-server-list.com/server/443038/vote/)
-    - [Minecraft-servers](https://minecraftservers.org/vote/580828)
-    - [Minecraft-mp](https://minecraft-mp.com/server/252752/vote/)
-    - [Best-Minecraft-servers](https://best-minecraft-servers.co/server-oplegends.4667/vote)
+* [StarnixMC](https://play.starnixmc.xyz/)
+    1. [Minecraft-MP](https://minecraft-mp.com/server/346812/vote/)
+    2. [Minecraft-Server.net](https://minecraft-server.net/vote/StarnixMC/)
+    3. [MinecraftServers.org](https://minecraftservers.org/server/677380)
+    4. [TopG](https://topg.org/minecraft-servers/server-674622)
+    5. [TopMinecraftServers](https://topminecraftservers.org/vote/41289)
+    6. [MC-Servers.com](https://mc-servers.com/vote/5999)
+    7. [MCList.io](https://mclist.io/server/66958-play-starnixmc-xyz-indian-based-cracked-surv/vote)
+    8. [MCServerTime](https://mcservertime.com/server-starnixmc.2736/vote)
 >***If you need any server to add or If you have any problems, don't hesitate to make an issue***
 
 ## I am not continuing this project 
