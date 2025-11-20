@@ -3,6 +3,7 @@ from yaml import SafeLoader
 
 from servers import *
 from servers.OpLegends import OpLegends
+from servers.StarnixMC import StarnixMC
 import global_variables
 
 
@@ -16,6 +17,9 @@ class Main:
 
         if 'OpLegends' in global_variables.config_data['server']:
             OpLegends(option)
+
+        if 'StarnixMC' in global_variables.config_data['server']:
+            StarnixMC(option)
 
 
 if __name__ == "__main__":
