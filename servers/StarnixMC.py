@@ -11,7 +11,7 @@ class StarnixMC:
         self.user = global_variables.config_data["username"]
         self.option = option
         self.driver = webdriver.Chrome(
-            service=Service('./chromedriver'), options=self.option)
+            service=Service(ChromeDriverManager().install()), options=self.option)
         self.is_proxy_change = global_variables.config_data["is_proxy_change"]
 
         self.mmp_server = mmp_server

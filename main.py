@@ -12,8 +12,14 @@ class Main:
     def __init__(self) -> None:
         option = webdriver.ChromeOptions()
         if global_variables.config_data['is_show_captcha'] is False:
-            option.add_argument("headless")
+            option.add_argument("--headless")
+            option.add_argument("--no-sandbox")
+            option.add_argument("--disable-dev-shm-usage")
+            option.add_argument("--disable-gpu")
+            option.add_argument("--window-size=1920,1080")
         option.add_experimental_option('useAutomationExtension', False)
+        option.add_experimental_option("excludeSwitches", ["enable-automation"])
+        option.add_argument("--disable-blink-features=AutomationControlled")
 
         if 'OpLegends' in global_variables.config_data['server']:
             OpLegends(option)

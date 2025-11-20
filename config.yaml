@@ -4,16 +4,17 @@ username: "RRF_GAMING"
 #change to "True" if you want to change proxies
 is_proxy_change: False
 
-#change to "True" if you ready to solve captcha
-is_show_captcha: True
+#change to "True" if you ready to solve captcha manually (requires GUI)
+#set to "False" for headless/server environments
+is_show_captcha: False
 
 server:
   StarnixMC:
-    -minecraft_mp_com.c
-    -minecraft_server_net.c
-    -minecraftservers_org.c
-    -topg_org.c
-    -topminecraftservers_org.c
-    -mc_servers_com.c
-    -mclist_io.c
-    -mcservertime_com.c
+    -minecraft_mp_com
+    -minecraft_server_net
+    -minecraftservers_org
+    -topg_org
+    -topminecraftservers_org
+    -mc_servers_com
+    -mclist_io
+    -mcservertime_com
