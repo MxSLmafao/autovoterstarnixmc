@@ -12,14 +12,26 @@ class Main:
     def __init__(self) -> None:
         option = webdriver.ChromeOptions()
         if global_variables.config_data['is_show_captcha'] is False:
-            option.add_argument("--headless")
+            option.add_argument("--headless=new")
             option.add_argument("--no-sandbox")
             option.add_argument("--disable-dev-shm-usage")
             option.add_argument("--disable-gpu")
+            option.add_argument("--disable-software-rasterizer")
+            option.add_argument("--disable-extensions")
+            option.add_argument("--disable-setuid-sandbox")
             option.add_argument("--window-size=1920,1080")
+            option.add_argument("--remote-debugging-port=9222")
+            option.add_argument("--disable-background-networking")
+            option.add_argument("--disable-default-apps")
+            option.add_argument("--disable-sync")
+            option.add_argument("--metrics-recording-only")
+            option.add_argument("--no-first-run")
+            option.add_argument("--safebrowsing-disable-auto-update")
+            option.add_argument("--disable-web-security")
         option.add_experimental_option('useAutomationExtension', False)
-        option.add_experimental_option("excludeSwitches", ["enable-automation"])
+        option.add_experimental_option("excludeSwitches", ["enable-automation", "enable-logging"])
         option.add_argument("--disable-blink-features=AutomationControlled")
+        option.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 
         if 'OpLegends' in global_variables.config_data['server']:
             OpLegends(option)
